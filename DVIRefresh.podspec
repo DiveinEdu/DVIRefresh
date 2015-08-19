@@ -3,10 +3,10 @@ Pod::Spec.new do |s|
   s.version  = '1.0.0'
   s.license  = 'MIT'
   s.summary  = "A powerful pull to refresh control"
-  s.homepage = 'http://www.diveinedu.com'
+  s.homepage = 'https://github.com/diveinedu/iOSCodeBase'
   s.authors  = { '戴维营教育' =>
                  'diveinedu@qq.com' }
   s.source   = { :git => 'https://github.com/diveinedu/DVIRefresh.git', :tag => s.version }
-  s.source_files = "DVIRefresh/**/*.{h,m}"
-  s.resource = "DVIRefresh/DVIRefresh.xcassets"
+  s.source_files = 'DVIRefresh/**/*.{h,m}'
+  s.resource = 'DVIRefresh/DVIRefresh.xcassets'
 end
