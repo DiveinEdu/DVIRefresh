@@ -7,7 +7,5 @@ Pod::Spec.new do |s|
   s.authors  = { '戴维营教育' =>
                  'diveinedu@qq.com' }
   s.source   = { :git => 'https://github.com/diveinedu/DVIRefresh.git', :tag => s.version }
-  s.source_files = 'DVIRefresh/**/*.{h,m}'
-  s.resource = 'DVIRefresh.xcassets'
-  s.require_arc = true
+  s.source_files = "DVIRefresh/**/*.{h,m}"
 end
