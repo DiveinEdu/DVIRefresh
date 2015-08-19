@@ -308,8 +308,4 @@ const CGFloat DVIRefreshHorizontalWidthDefault = 50.0;
 - (void)didTriggered {}
 - (void)didEndScroll {}
 
-
-- (void)dealloc {
-	[self removeObservers];
-}
 @end
