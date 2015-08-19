@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = 'DVIRefresh/**/*.{h,m}'
   s.resource = 'DVIRefresh/DVIRefresh.xcassets'
 
-  s.dependency "DVIViewUtils", :git => "https://github.com/diveinedu/DVIViewUtils.git"
+  s.dependency "DVIViewUtils", :podspec => "https://github.com/diveinedu/DVIViewUtils/DVIViewUtils.podspec"
 end
