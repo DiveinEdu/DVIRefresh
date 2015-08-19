@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'DVIRefresh'
-  s.version  = '1.0.0'
+  s.version  = '1.0.1'
   s.license  = 'MIT'
   s.summary  = "A powerful pull to refresh control"
   s.homepage = 'http://www.diveinedu.com'
