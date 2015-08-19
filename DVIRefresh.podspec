@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.source_files = 'DVIRefresh/**/*.{h,m}'
   s.resource = 'DVIRefresh/DVIRefresh.xcassets'
 
-  s.require_arc = true
+  s.requires_arc = true
 end
