@@ -71,8 +71,9 @@ const CGFloat DVIRefreshHorizontalWidthDefault = 50.0;
 }
 
 - (void)removeObservers {
-    DVIRemoveObserver(_scrollView, self, DVIRefreshKeyPathContentOffset);
-    DVIRemoveObserver(_scrollView, self, DVIRefreshKeyPathContentSize);
+	//不能使用_scrollView, 在移除之前就已经被设置为nil了
+    DVIRemoveObserver(self.superview, self, DVIRefreshKeyPathContentOffset);
+    DVIRemoveObserver(self.superview, self, DVIRefreshKeyPathContentSize);
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {

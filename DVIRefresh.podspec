@@ -9,4 +9,6 @@ Pod::Spec.new do |s|
   s.source   = { :git => 'https://github.com/diveinedu/DVIRefresh.git', :tag => s.version }
   s.source_files = 'DVIRefresh/**/*.{h,m}'
   s.resource = 'DVIRefresh/DVIRefresh.xcassets'
+
+  s.require_arc = true
 end
