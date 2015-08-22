@@ -71,7 +71,6 @@ const CGFloat DVIRefreshHorizontalWidthDefault = 50.0;
 }
 
 - (void)removeObservers {
-	//不能使用_scrollView, 在移除之前就已经被设置为nil了
     DVIRemoveObserver(self.superview, self, DVIRefreshKeyPathContentOffset);
     DVIRemoveObserver(self.superview, self, DVIRefreshKeyPathContentSize);
 }
@@ -100,8 +99,8 @@ const CGFloat DVIRefreshHorizontalWidthDefault = 50.0;
         [self removeObservers];
         
         _scrollView = (UIScrollView *)newSuperview;
-        [self placeRefreshView];
         
+        [self placeRefreshView];
         [self addObservers];
     }
 }
@@ -155,7 +154,7 @@ const CGFloat DVIRefreshHorizontalWidthDefault = 50.0;
     }
 }
 
-/*设置加载是所需要的停靠位置*/
+/*设置加载时所需要的停靠位置*/
 - (void)setScrollViewContentInset:(UIEdgeInsets)contentInset {
     [UIView animateWithDuration:0.3
                           delay:0
@@ -309,4 +308,7 @@ const CGFloat DVIRefreshHorizontalWidthDefault = 50.0;
 - (void)didTriggered {}
 - (void)didEndScroll {}
 
+- (void)dealloc {
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+}
 @end
